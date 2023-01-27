@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//components import
+import { TweetCreator } from './components/tweets/TweetCreator';
+import { Tweet } from './components/tweets/Tweet';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Tweet/>
   </React.StrictMode>
 );
 

@@ -1,0 +1,17 @@
+#tweetBtn{
+    border-radius: 40px;
+ 
+}
+.flex-container{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    padding:20px  20px  0px  20px;
+}
+
+.tweet-creator{
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border:1px solid pink;
+    padding:5px;
+}

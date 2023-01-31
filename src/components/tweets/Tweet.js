@@ -1,10 +1,10 @@
 
-export function Tweet(){
-
+export function Tweet(props){
+    
     return(
         <div>
-            <h5>Zeeshan Haider Khan </h5><p>@zeeshanhaiderkhan</p>
-            <p>for react!</p>
+            <h5>{props.name}</h5><p>@{props.username}</p>
+            <p>{props.text}</p>
         </div>
     )
 }

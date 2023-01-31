@@ -4,15 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-//components import
-import { TweetCreator } from './components/tweets/TweetCreator';
-import { Tweet } from './components/tweets/Tweet';
+import { RouterProvider } from 'react-router-dom';
+import {router} from './routes/Root';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Tweet/>
+    <RouterProvider router = {router}/>
   </React.StrictMode>
 );
 

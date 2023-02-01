@@ -1,4 +1,5 @@
 import {BrowserRouter as Router,createBrowserRouter} from 'react-router-dom';
+import { TweetFeed } from '../components/tweets/TweetFeed';
 
 
 import { Login } from '../components/users/Login';
@@ -14,6 +15,10 @@ export const router = createBrowserRouter([
     {
         path:"/signup",
         element:<Signup/>
+    },
+    {
+        path:'/tweet-feed',
+        element:<TweetFeed/>
     }
 ])
 

@@ -1,0 +1,23 @@
+
+.tweet{
+    border:1px solid pink;
+    background-color: #E8F5FD;
+    border-radius: 20px;
+    padding:5px;
+    margin:5px;
+}
+.tweet-header{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+.tweet-body-text{
+    color:black;
+    
+}
+.tweet-header-username{
+    color:#798690;
+}
+.tweet-header-time{
+    color:#798690;
+}

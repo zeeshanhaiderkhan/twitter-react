@@ -6,17 +6,19 @@ const API_URL = process.env.REACT_APP_API_URL;
 
 //currently storing login in localStorage
 
-export function TweetCreator(){
+export function TweetCreator(props){
     const[tweet,setTweet] = useState();
+    const currentUserId = JSON.parse(localStorage.getItem('user')).id;
 
     function createTweet(e){
         e.preventDefault();
         axios.post(API_URL+"/tweets",{
-            created_by:1,
+            created_by:currentUserId,
             text:tweet
         }).then(
             (result)=>{
              setTweet('');   
+             props.setNewTweet(tweet);
             }
         ).catch(
             (err)=>{

@@ -1,0 +1,17 @@
+@font-face {
+    font-family:"chirp-medium";
+    src: url('../public/chirp_medium.otf');
+}
+@font-face {
+    font-family:"chirp-light";
+    src: url('../public/chirp_light.otf');
+}
+@font-face {
+    font-family:"chirp-regular";
+    src: url('../public/chirp_regular.otf');
+}
+
+p{
+    font-family: "chirp-light";
+    color:#0F1419;
+}
